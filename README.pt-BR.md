@@ -109,6 +109,24 @@ rodando durante a atualização; o app pergunta antes de reiniciar o serviço em
 
 No Linux com o `.deb`, o app só abre esta página: instale o pacote novo como acima.
 
+## Dados de uso
+
+O Fellowship envia **dados de uso anônimos** para que o mantenedor veja quais recursos são usados e onde o tempo é
+gasto. Vem **ligado por padrão**. Desligue quando quiser em **Configurações → Geral → Compartilhar dados de uso
+anônimos**; o envio para na hora e o que ainda esperava para ser enviado é apagado.
+
+**Nada que identifique você é coletado.** Nem nome, e-mail ou conta. E nunca seus prompts, mensagens ou saída dos
+agentes, código, caminhos de arquivos ou pastas, nomes de repositório, branch, workspace ou host, destinos SSH,
+variáveis de ambiente ou argumentos de comandos. Só contagens, durações e valores de uma lista fixa (por exemplo, qual
+CLI um agente usa, ou se um workspace é local ou via SSH).
+
+O que cada instalação carrega: um ID aleatório gerado na primeira execução, que não vem da sua máquina nem da sua conta,
+mais a versão do app, o sistema operacional, a arquitetura da CPU, o idioma e o tamanho da tela. O servidor usa o
+endereço IP da conexão apenas para descobrir o país, e não o guarda. Sem cookies.
+
+Os dados vão para uma instância [Umami](https://umami.is) própria do mantenedor, que não os compartilha. Builds
+executados a partir do código-fonte não enviam nada.
+
 ## Estado atual
 
 O Fellowship é jovem (versões 0.x) e muda rápido.

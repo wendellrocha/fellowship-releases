@@ -108,6 +108,24 @@ running through an update; the app asks before it restarts the background servic
 
 On Linux with the `.deb`, the app only opens this page: install the new package as above.
 
+## Usage data
+
+Fellowship sends **anonymous usage data** so the maintainer can see which features are used and where time is spent. It
+is **on by default**. Turn it off at any time in **Settings → General → Share anonymous usage data**; it stops at once
+and anything still waiting to be sent is deleted.
+
+**Nothing that identifies you is collected.** No name, email or account. And never your prompts, agent messages or
+output, code, file paths or folders, repository, branch, workspace or host names, SSH targets, environment variables
+or command arguments. Only counts, durations and a fixed list of values (for example which CLI an agent uses, or that
+a workspace is local or over SSH).
+
+What each install does carry: a random ID generated on first run, not derived from your machine or your account, plus
+the app version, operating system, CPU architecture, language and screen size. The server uses the connection's IP
+address only to work out the country, and does not store it. No cookies.
+
+The data goes to a self-hosted [Umami](https://umami.is) instance run by the maintainer, which does not share it.
+Builds run from source send nothing.
+
 ## Status
 
 Fellowship is young (versions 0.x) and changes quickly.
